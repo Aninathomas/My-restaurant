@@ -1,0 +1,335 @@
+*{
+    margin: 0px;
+    bottom: 0px;
+}
+.container{
+    width: 100%;
+    height: 100vh; 
+    background-color: white;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0px;
+    width:100%;
+    box-shadow: 0px 0px 5px 0px;
+    height: 70px;
+    background-color:rgb(11, 17, 37) ;
+   
+    
+}
+.logo{
+    width: 120px;
+    margin-left: 60px;
+    margin-right: 400px;
+}
+.linkeditem{
+    display:inline-block;
+    margin: 10px 20px;
+    
+}
+.links{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+.home-icon{
+    margin-left: 120px;
+    color:white;
+    cursor: pointer;
+    
+}
+
+.links:hover{
+    color:red;
+    
+}
+#home,#about,#services,#reviews{
+    margin: 9% 5% 0px 6%;
+}
+.home-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap:2rem;
+}
+.home-title,.about-title{
+    font-size: 35px;   
+}
+#colorname{
+color:orange;
+}
+.home-para,.about-para{
+    margin-top: 30px;
+    text-align: justify;
+    margin-bottom:40px ;
+}
+.image img{
+    width: 100%;
+  margin-top: -70px;
+  
+}
+.home-button,.about-button{
+    background-color:rgb(240, 108, 26);
+    color:white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+    border: 1px;
+
+}
+.home-button:hover{
+    transform: scale(1.1);
+    background-color:rgb(247, 83, 24);
+}
+.about-button:hover{
+    transform: scale(1.1);
+    background-color: rgb(247, 83, 24);
+}
+html{
+    scroll-behavior: smooth;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap:2rem;
+}
+.head2{
+    margin-top: 30px;
+}
+.menu-title,.ser-title,.review-title{
+    font-size: 35px;   
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.menu-title span{
+    margin-left: 15px;
+}
+.menu-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 10px;
+}
+.menu-card{
+    width: 325px;
+    height:480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+     box-shadow:0 0 10px rgba(0,0,0,0.5) ;
+    
+}
+.menu-img {
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+.menu-img img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    object-position:center;
+}
+.menu-img img:hover{
+    transform:scale(1.1) ;
+    transition: 0.3s;
+}
+.menu-info h2{
+    width: 60%;
+    text-align: center;
+    margin: 10px 50px;
+    font-size: 25px;
+    color: red;
+}
+.menu-info p{
+    text-align: center;
+    text-align: justify;
+    margin-top: -10px;
+    line-height: 21px;
+    padding: 15px;
+}
+.menu-info h3{
+    text-align: center;
+    
+}
+.menu-icon{
+    color: #ff9900;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+.menu-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 8px 10px; 
+    margin: 0 80px;
+
+}
+.ser-title span{
+    margin-left: 15px;
+}
+.ser-box .box img{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit:cover;
+    border: 1px solid #fff;;
+    box-shadow: 0.5px,1px rgba(0,0,0,0.1);
+    
+}
+.ser-box .box{
+    flex: 1 1 25px;
+    padding:1rem;
+    text-align: center;
+}
+.ser-box{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    gap: 2.5px;
+   
+}
+.ser-box .box h3{
+margin-top: 5px;
+margin-left: 25px;
+}
+#reviews{
+    margin: 9% 5% 10% 6%;
+}
+.review-title span{
+    margin-left: 15px;
+}
+.review-box{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px;
+}
+.review-box .box{
+    text-align: center;
+    padding:2rem;
+    border: 1px solid #fff;;
+    box-shadow: 0.5px,1px rgba(0,0,0,0.1);
+    border-radius:1px ;
+    background:#333;
+    margin-top: 6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.review-box .box:hover{
+   transform:translateY(-30px); 
+}
+.review-box .box img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    margin-top: -20rem;
+    object-fit: cover;
+}
+.review-box .box h3{
+    font-size: 25px;
+    color:#fff;
+    padding:10px 0;
+}
+.review-box .box .review-icon{
+    font-size: 20px;
+    color:rgb(251, 9, 5);
+    padding:10px 0;
+}
+.review-box .box p{
+    font-size: 18px;
+    color:#fff;
+    padding:5px 0;
+    text-align: justify;
+}
+footer{
+    width: 99%;
+    height: 50%;
+    padding: 30px 0 0 20px;
+    background-color:rgb(11, 17, 37);
+
+}
+.footer-main{
+  
+ display: grid;
+ grid-template-columns: repeat(5,1fr);
+
+}
+.footer-tag{
+    text-align: center;
+    
+}
+.footer-tag h2{
+color:white;
+margin-bottom: 25px;
+font-size: 30px;
+
+}
+.footer-tag p{
+    margin: 10px 0;
+    color: white;
+}
+
+.footer-tag i{
+    margin: 0px 5px;
+    cursor: pointer;
+    color:white;
+}
+.footer-tag i:hover{
+    background-image: linear-gradient(to bottom right, yellow, red);
+}
+
+@keyframes shake{
+ 10%{
+    transform: rotate(15deg);
+    }
+ 20%{
+    transform: rotate(-15deg);
+    }
+ 30%{
+    transform: rotate(15deg);
+    }
+ 40%{
+    transform: rotate(-15deg);
+    }
+}
+.footer-main .end{
+
+align-items: center;
+justify-content: center;
+padding:15px;
+}
+
+.up-arrow{
+    float: right;
+    width: 50px ;
+    height: 50px ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+    font-size: 30px;
+    background-image: linear-gradient(to bottom right, yellow, red);
+    margin: 5px 0px 5px 10px;
+   }
+.up-arrow:hover i{
+ color: white;
+}
